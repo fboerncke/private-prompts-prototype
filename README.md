@@ -1,8 +1,7 @@
 
 # Private Prompts
 
-**Early MVP Draft**  
-_Features may change any time - Feedback welcome!_
+Current status: this is a project description for the application **Private Prompts**. An early **MVP** is work in progress and will be available on this page soon.
 
 ## About Private Prompts
 
