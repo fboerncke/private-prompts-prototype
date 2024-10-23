@@ -166,18 +166,9 @@ Please note that this is currently a work-in-progress prototype and not a final 
 - Full Keyboard support (no need to use a mouse)
 - Smart search prompt database
 
-## Get Help & Documentation
-
-- Documentation (coming soon)
-- Comprehensive guides and tutorials
-
 ## Contact & Support
 
-Reach out to the author for assistance with any issues or questions.
-
-## GitHub Repository
-
-Explore our open-source code and contribute to the development of Private Prompts.
+Reach out to the author for assistance with issues, suggestions or questions: frank.boerncke@gmail.com
 
 ## Current Version / Download / Installation
 
