@@ -180,7 +180,7 @@ Coming soon: Test binaries for a Private Prompts minimal viable product (MVP).
 
 ## Acknowledgements
 
-This project receives funding from the [German Federal Ministry of Education and Research](https://www.bmbf.de/) (FKZ 01IS24S44)
+This project receives funding from the [German Federal Ministry of Education and Research](https://www.bmbf.de/) (1.9.2024-28.02.2025, FKZ 01IS24S44)
 
 [![Logo Bundesministerium für Bildung und Forschung](./resources/assets/bmbf_en.jpg)](https://www.bmbf.de/)
 &nbsp; &nbsp;
