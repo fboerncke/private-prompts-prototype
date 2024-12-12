@@ -1,7 +1,7 @@
 
 # Private Prompts
 
-Current status: First MVP is open for evaluation. [Find out the details here](https://github.com/fboerncke/private-prompts-prototype/releases/tag/v0.001-MVP-001)
+Current status: Second MVP is open for evaluation. [Find out the details here](https://github.com/fboerncke/private-prompts-prototype/releases/tag/v0.001-MVP-002)
 
 As follows you find a project description for the application **Private Prompts**.
 
