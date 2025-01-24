@@ -1,7 +1,7 @@
 
 # Private Prompts
 
-Current status: Second MVP is open for evaluation. [Find out the details here](https://github.com/fboerncke/private-prompts-prototype/releases/tag/v0.001-MVP-002)
+Current status: Second Beta is open for evaluation. [Find out the details here](https://github.com/fboerncke/private-prompts-prototype/releases)
 
 As follows you find a project description for the application **Private Prompts**.
 
@@ -159,24 +159,13 @@ Last month, I spent €500 on rent at
 123 Sesame Street, and €150 on groceries.
 ```
 
-## Ideas / Maybe Upcoming Features
-
-Please note that this is currently a work-in-progress prototype and not a final product. The author welcomes your feedback!
-
-- Multi-Language Support
-- AI agnostic adapters
-- Full Keyboard support (no need to use a mouse)
-- Smart search prompt database
-
 ## Contact & Support
 
 Reach out to the author for assistance with issues, suggestions or questions: frank.boerncke@gmail.com
 
 ## Current Version / Download / Installation
 
-Coming soon: Test binaries for a Private Prompts minimal viable product (MVP).
-
-- ...
+[Visit the releases page](https://github.com/fboerncke/private-prompts-prototype/releases)
 
 ## Acknowledgements
 
