@@ -1,0 +1,114 @@
+{
+  "appId": "org.privateprompts.app",
+  "productName": "Private Prompts",
+  "copyright": "Copyright 2025, Frank Börncke",
+  "directories": {
+    "output": "dist/${arch}"
+  },
+  "asar": true,
+  // "nsis": {
+  //   "oneClick": false,
+  //   "perMachine": false,
+  //   "allowToChangeInstallationDirectory": true,
+  //   "shortcutName": "PrivatePrompts"
+  // },
+  "win": {
+    "target": [
+      {
+        "target": "portable",
+        "arch": [
+          "ia32"
+        ]
+        //"arch": ["ia32", "x64"]
+        // "arch": ["x64", "ia32"]
+      }
+    ],
+    "icon": "../../assets/icons/private-prompts-logo-orange-bubble-512.png",
+    "artifactName": "PrivatePrompts-0.0.4-beta.exe"
+  },
+  "mac": {
+    "target": [
+      "dmg",
+      "zip"
+    ],
+    "icon": "../../assets/icons/private-prompts-logo-orange-bubble-512.png",
+    "hardenedRuntime": false, // Hardened runtime requires Apple Developer ID
+    "gatekeeperAssess": false, // Skip Apple Gatekeeper notarization
+    "identity": null
+  },
+  "linux": {
+    "target": [
+      "AppImage"
+    ],
+    "maintainer": "Frank Börncke <frank.boerncke@gmail.com>",
+    "category": "Utility",
+    "icon": "../../assets/icons/private-prompts-logo-orange-bubble-512.png",
+    "artifactName": "PrivatePrompts-0.0.4-beta.Appimage"
+  },
+  "files": [
+    {
+      "from": "build/main",
+      "to": "main",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "build/renderer",
+      "to": "renderer",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "src/main/static",
+      "to": "static",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "src/main",
+      "to": "src/main",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "node_modules",
+      "to": "node_modules",
+      "filter": [
+        "**/*",
+        "!**/{CHANGELOG.md,README.md,README,readme.md,readme}",
+        "!**/{test,__tests__,tests,powered-test,example,examples}",
+        "!**/docs/**",
+        "!**/coverage/**",
+        "!**/build/**",
+        "!**/tests/**",
+        "!**/examples/**"
+      ]
+    },
+    {
+      "from": "node_modules/ajv",
+      "to": "node_modules/ajv",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "node_modules/ajv-formats",
+      "to": "node_modules/ajv-formats",
+      "filter": [
+        "**/*"
+      ]
+    },
+    {
+      "from": "node_modules/electron-store",
+      "to": "node_modules/electron-store",
+      "filter": [
+        "**/*"
+      ]
+    },
+    "package.json"
+  ]
+}

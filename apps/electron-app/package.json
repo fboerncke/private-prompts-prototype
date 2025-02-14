@@ -1,0 +1,36 @@
+{
+  "name": "private-prompts-electron-app",
+  "productName": "Private Prompts",
+  "description": "Private Prompts Electron Application",
+  "version": "0.0.4-beta",
+  "author": {
+    "name": "Frank Börncke <frank.boerncke@gmail.com>",
+    "url": "https://github.com/fboerncke"
+  },
+  "homepage": "https://www.boerncke.de",
+  "license": "AGPL-3.0-only",
+  "main": "main/main.js",
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "build": "node scripts/build.js && electron-builder",
+    "build:win32": "node scripts/build.js && electron-builder --win --ia32 ",
+    "build:win64": "node scripts/build.js && electron-builder --win --x64 --dir",
+    "build:win": "node scripts/build.js && electron-builder --win --dir",
+    "build:mac": "node scripts/build.js && electron-builder --mac",
+    "build:linux": "node scripts/build.js && electron-builder --linux --dir false"
+  },
+  "repository": "https://github.com/fboerncke",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "electron-store": "^8.0.1",
+    "node-polyfill-webpack-plugin": "^4.0.0",
+    "vite-plugin-node-polyfills": "^0.22.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/electron-store": "^3.2.0",
+    "chokidar": "^3.6.0",
+    "electron": "31.1.0",
+    "electron-builder": "^24.13.3"
+  }
+}

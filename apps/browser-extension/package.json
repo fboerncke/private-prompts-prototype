@@ -1,0 +1,36 @@
+{
+  "name": "private-prompts-browser-extension",
+  "productName": "Private Prompts",
+  "description": "Private Prompts Browser Plugin - experimental",
+  "version": "0.0.4-beta",
+  "author": {
+    "name": "Frank Börncke <frank.boerncke@gmail.com>",
+    "url": "https://github.com/fboerncke"
+  },
+  "homepage": "https://www.boerncke.de",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "dev:chrome": "wxt -b google-chrome",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "build:chrome": "wxt build -b google-chrome",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "zip:chrome": "wxt zip -b google-chrome",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@private-prompts/shared": "0.0.4-beta",
+    "webextension-polyfill": "^0.12.0"
+  },
+  "devDependencies": {
+    "@wxt-dev/module-vue": "^1.0.0",
+    "vite-plugin-static-copy": "^2.2.0",
+    "wxt": "^0.19.16"
+  }
+}

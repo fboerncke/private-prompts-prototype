@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@private-prompts/shared": ["../../shared/src"],
+      "@private-prompts/shared/*": ["../../shared/src/*"]
+    }
+  },
+  "include": ["src/**/*", "../../shared/src/**/*"]
+}
+

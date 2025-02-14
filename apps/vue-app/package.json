@@ -1,0 +1,27 @@
+{
+  "name": "private-prompts-vue-app",
+  "productName": "Private Prompts",
+  "description": "Private Prompts Vue Application",
+  "version": "0.0.4-beta",
+  "author": {
+    "name": "Frank Börncke <frank.boerncke@gmail.com>",
+    "url": "https://github.com/fboerncke"
+  },
+  "homepage": "https://www.boerncke.de",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "type-check": "vue-tsc --noEmit --skipLibCheck",
+    "lint": "eslint \"src/**/*.{ts,vue}\" --fix",
+    "build-only": "vite build"
+  },
+  "dependencies": {
+    "@private-prompts/shared": "0.0.4-beta"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,44 @@
+{
+  "name": "private-prompts-monorepo",
+  "productName": "Private Prompts",
+  "description": "Private Prompts Main Repository",
+  "version": "0.0.4-beta",
+  "author": {
+    "name": "Frank Börncke <frank.boerncke@gmail.com>",
+    "url": "https://github.com/fboerncke"
+  },
+  "homepage": "https://www.boerncke.de",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "shared"
+  ],
+  "scripts": {
+    "test": "jest --config shared/jest.config.js",
+    "dump-flat-app": "node scripts/flatten.js",
+    "dump-folder-structure": "find . | grep -v node_modules | grep -v .git | grep -v nosync | grep -v /dist/ | grep -v /build/ | sort > folder-structure.md",
+    "lint": "eslint --quiet -c .eslintrc.js \"**/*.{js,ts,vue}\"",
+    "lint-warnings": "eslint -c .eslintrc.js \"**/*.{js,ts,vue}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.4.2",
+    "typescript": "~5.5.2",
+    "vite": "^5.3.4",
+    "vite-plugin-vue-devtools": "^7.3.1",
+    "vite-plugin-vuetify": "^2.0.3",
+    "vitest": "^1.6.0",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^2.0.21"
+  }
+}

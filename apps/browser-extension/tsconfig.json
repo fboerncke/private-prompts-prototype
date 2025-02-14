@@ -1,0 +1,18 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "../../dist/browser-extension",
+        "jsx": "preserve",
+        "paths": {
+            "@private-prompts/shared/*": [
+                "../../shared/src/*",
+            ],
+            "@assets": [
+                "../../assets"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

@@ -212,7 +212,7 @@ Each tab in the application has a specific function, allowing users to easily fi
 
 ### Main Workspace: The Protected Workbench of Private Prompts
 
-The **Protected Workbench** is the primary area where you create, refine, and manage your AI prompts. This workspace is designed to provide a structured and user-friendly experience, helping you maintain privacy while working with AI-generated content.
+The **Private Prompts** workbench is the primary area where you create, refine, and manage your AI prompts. This workspace is designed to provide a structured and user-friendly experience, helping you maintain privacy while working with AI-generated content.
 
 #### Key Features of Private Prompts
 
@@ -254,7 +254,7 @@ The **Protected Workbench** is the primary area where you create, refine, and ma
    - The **Clear History** button allows you to delete all past entries at once if needed.
 
 #### Summary
-The **Protected Workbench** is a secure and user-friendly environment designed for crafting AI prompts while maintaining full control over your data privacy. With built-in history tracking, sensitive data masking, and AI processing controls, it offers an efficient and structured workflow for managing your interactions with AI.
+The workbench of **Private Prompts** is a secure and user-friendly environment designed for crafting AI prompts while maintaining full control over your data privacy. With built-in history tracking, sensitive data masking, and AI processing controls, it offers an efficient and structured workflow for managing your interactions with AI.
 
 ### Prompt Manager: Easily Organize Your AI Prompts
 

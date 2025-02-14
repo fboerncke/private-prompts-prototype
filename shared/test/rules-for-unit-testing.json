@@ -1,0 +1,46 @@
+[
+  {
+    "userDefinedSensitiveDataPattern": "MyFirstName",
+    "userDefinedTemporaryPlaceholder": "Max"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "MyLastName",
+    "userDefinedTemporaryPlaceholder": "Mustermann"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "MyTopSecretProjectName",
+    "userDefinedTemporaryPlaceholder": "Project Phoenix"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "Bahnhofstraße",
+    "userDefinedTemporaryPlaceholder": "Musterstrasse"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "0511/3333333",
+    "userDefinedTemporaryPlaceholder": "0851/4711"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "john.doe@gmail.com",
+    "userDefinedTemporaryPlaceholder": "max.mustermann@example.com"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "30624 Hannover",
+    "userDefinedTemporaryPlaceholder": "12345 Musterstadt"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "{email}",
+    "userDefinedTemporaryPlaceholder": "test@example.com"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "{iban}",
+    "userDefinedTemporaryPlaceholder": "HEINZ"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "{ipv4}",
+    "userDefinedTemporaryPlaceholder": "192.1.1.1"
+  },
+  {
+    "userDefinedSensitiveDataPattern": "{creditcardnumber}",
+    "userDefinedTemporaryPlaceholder": "12341234888834210"
+  }
+]

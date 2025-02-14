@@ -1,0 +1,16 @@
+{
+  "extends": "../../../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../build/renderer",
+    "paths": {
+      "@private-prompts/shared/*": [
+        "../../../../shared/src/*"
+      ]
+    }
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.vue",
+    //"../../../../shared/src/**/*"
+  ]
+}

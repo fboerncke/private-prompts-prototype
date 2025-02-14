@@ -1,0 +1,51 @@
+{
+  "name": "@private-prompts/shared",
+  "productName": "Private Prompts",
+  "description": "Private Prompts Shared Code",
+  "version": "0.0.4-beta",
+  "author": {
+    "name": "Frank Börncke <frank.boerncke@gmail.com>",
+    "url": "https://github.com/fboerncke"
+  },
+  "homepage": "https://www.boerncke.de",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "test": "jest --config jest.config.js",
+    "type-check": "vue-tsc --noEmit"
+  },
+  "peerDependencies": {
+    "pinia": "^2.3.1",
+    "vue": "^3.5.8",
+    "vue-router": "^4.3.3",
+    "vuetify": "^3.7.7"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@mdi/font": "^7.4.47",
+    "date-fns": "^4.1.0",
+    "lodash": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
+    "openai": "^4.80.0",
+    "pinia": "^2.3.1",
+    "validator": "^13.12.0",
+    "vue": "^3.5.8",
+    "vue-i18n": "^11.0.1",
+    "vue-router": "^4.3.3",
+    "vuedraggable": "^4.1.0",
+    "vuetify": "^3.7.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/lodash": "^4.17.12",
+    "@types/lodash.debounce": "^4.0.9",
+    "@types/validator": "^13.12.2",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}

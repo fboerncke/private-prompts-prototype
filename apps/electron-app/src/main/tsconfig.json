@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../build/main",
+    // "paths": {
+    //   "@private-prompts/shared/*": [
+    //     "../../../../shared/src/*"
+    //   ]
+    // }
+  },
+  "include": [
+    "./**/*.ts",
+    // "../../../../shared/src/**/*.ts"
+  ]
+}
