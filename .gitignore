@@ -36,5 +36,8 @@ nosync/
 *.key
 *.p12
 
+.wxt/
+
 folder-structure.md
 flat-app.md
+SCRATCHPAD.md
