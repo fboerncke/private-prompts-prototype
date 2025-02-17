@@ -104,7 +104,7 @@
         "help-text-privacy-rules-explained": {
             "title": "Help - Privacy Rules Explained",
             "intro_1": "With Private Prompts, you decide what information is private. Create rules to match or replace specific words or patterns in your prompts before sending them.",
-            "intro_2": "Use `{curly braces}` to replace sensitive info with random data. This keeps the text structure while removing sensitive data. Private Prompts will restore original values after processing.",
+            "intro_2": "Use curly braces to replace sensitive info with random data. This keeps the text structure while removing sensitive data. Private Prompts will restore original values after processing.",
             "intro_3": "Pseudonymization replaces real data with random but realistic looking placeholders. ",
             "sensitive-data-pattern-static": "Sensitive Data Pattern (Static Replacement Rules)",
             "intro-static": "Start with static rules to replace specific words, names, or emails before processing. Define rules to mask private info.",
