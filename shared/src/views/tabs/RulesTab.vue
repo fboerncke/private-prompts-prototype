@@ -85,7 +85,7 @@
             {{ $t('rulesTab.help-text-privacy-rules-explained.intro_1') }}
           </div>
           <div style="font-size: 16px;padding-top: 10px;padding-left: 40px; text-align: left;width:90%;">
-            {{ $t('rulesTab.help-text-privacy-rules-explained.intro_2') }}
+            <p v-html="$t('rulesTab.help-text-privacy-rules-explained.intro_2')"></p>
           </div>
           <div style="font-size: 16px;padding-top: 10px;padding-left: 40px; text-align: left;width:90%;">
             {{ $t('rulesTab.help-text-privacy-rules-explained.intro_3') }}

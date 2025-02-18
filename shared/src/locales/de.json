@@ -104,7 +104,7 @@
     "help-text-privacy-rules-explained": {
       "title": "Hilfe - Datenschutzregeln erklärt",
       "intro_1": "Mit Private Prompts entscheidest du, welche Informationen privat sind. Erstelle Regeln, um bestimmte Wörter oder Muster in deinen Prompts vor dem Senden zu ersetzen.",
-      "intro_2": "Verwende geschweifte Klammern, um sensible Informationen durch zufällige Daten zu ersetzen. Dies behält die Textstruktur bei und entfernt sensible Daten. Private Prompts stellt die Originalwerte nach der Verarbeitung wieder her.",
+      "intro_2": "Verwende &#123;geschweifte Klammern für vordefinierte Ausdrücke&#125;, um sensible Informationen durch zufällige Daten zu ersetzen. Dies behält die Textstruktur bei und entfernt sensible Daten. Private Prompts stellt die Originalwerte nach der Verarbeitung wieder her.",
       "intro_3": "Pseudonymisierung ersetzt echte Daten durch zufällige aber realistische Platzhalter.",
       "sensitive-data-pattern-static": "Muster für sensible Daten (Statische Ersetzungsregeln)",
       "intro-static": "Beginne mit statischen Regeln, um bestimmte Wörter, Namen oder E-Mails vor der Verarbeitung zu ersetzen. Definiere Regeln, um private Informationen zu maskieren.",
