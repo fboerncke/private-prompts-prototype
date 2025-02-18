@@ -701,6 +701,41 @@ For development and testing, alternative modes (Web and Browser Extension) are a
 
 - **Transparency and Trust**: By being open-source, **Private Prompts** allows anyone to inspect the code, ensuring that the application is not doing anything malicious with private information. This transparency helps build trust among users, as they can verify for themselves that their data remains secure and private.
 
+## F.A.Q. - Frequently asked questions
+
+### What is Private Prompts?
+Private Prompts is an application that enables secure AI usage while keeping sensitive data on your own device. It allows you to create confidential documents or emails without exposing your personal information to external servers.
+
+### Why is there no web version of Private Prompts?
+Private Prompts is designed for individuals who prioritize data privacy and do not want to share their information with online services. A web-based version would compromise this principle, as data processing would take place on third-party servers. Instead, Private Prompts runs entirely on your local computer.
+
+### Is Private Prompts suitable for non-technical users?
+If you can use ChatGPT or similar AI tools, you will have no trouble using Private Prompts. The interface is designed to be intuitive, allowing essential functions to be used without technical knowledge. Advanced users also have access to additional customization options.
+
+### Why is my data at risk when using AI?
+When you submit data to an AI service, you lose control over what happens to it. Your information might be stored, analyzed, or even used for future training of AI models. If data is processed on external servers, there is also the risk of data breaches, unauthorized access, or misuse.
+
+### How does Private Prompts ensure data privacy?
+You have full control over which data is considered sensitive, such as names, credit card numbers, or addresses. All information remains on your local device—there is no cloud storage or hidden data transmission. The security of your data depends solely on your own system environment.
+
+### Do I need Private Prompts if I run a local LLM on my own computer?
+If you are using a local LLM, the pseudonymization features of Private Prompts may not be necessary. However, the **Prompt Manager** remains a valuable tool for organizing and reusing prompts efficiently.
+
+### What is pseudonymization?
+Pseudonymization is a privacy technique where personal data is replaced with artificial identifiers, preventing direct attribution to an individual. These placeholders can later be restored to their original form after processing.
+
+### How does pseudonymization improve data privacy?
+Pseudonymization minimizes the risk of personal data leaving your local system. Private Prompts incorporates this approach at its core, allowing users to maintain control over their information without sacrificing the convenience of AI-powered tools.
+
+### Who is the target audience for Private Prompts?
+Private Prompts is designed for individuals who want to use AI creatively while retaining full control over their data. The built-in **Prompt Manager** helps users securely organize and structure their prompts—much like a well-organized note collection—while ensuring sensitive information remains protected.
+
+### What is the Prompt Manager?
+The **Prompt Manager** provides a structured way to manage AI input. Instead of saving prompts in scattered notes or external documents, Private Prompts offers a centralized solution for organizing and reusing them. All data remains on your local device, ensuring full control over personal information.
+
+### How do I uninstall Private Prompts?
+To uninstall Private Prompts, simply delete the application file. Additionally, you may want to remove its configuration file, which can be found using the path information shown in the program's settings.
+
 ## Learn More and Get in Touch
 
 Visit [privateprompts.org](https://privateprompts.org) or contact the author Frank Börncke <frank.boerncke@gmail.com> for more information.
