@@ -12,14 +12,14 @@ export const defaultPrompts: Prompt[] = [
   {
     id: 0,
     isFavorite: false,
-    description: "Example sensitive prompt - Job application letter",
+    description: "Example prompt including sensitive data - Job application letter",
     prompt: `Write a friendly job application letter.
 My name: Marten Solbeck
 My address: Bahnhofstraße 12
 33602 Bielefeld
 Phone: 05202/3333333
 Mail: marten.solbeck@gmail.com
-Job description: Manager Position in a fast food restaurant.`,
+Job description: A manager position in a fast food restaurant.`,
     comment: "This prompt can be used to demonstrate the functionality of the application.",
     platforms: ["ChatGPT", "Claude"],
     tags: ["Demo case"],
