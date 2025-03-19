@@ -10,16 +10,23 @@
   "homepage": "https://www.boerncke.de",
   "license": "AGPL-3.0-only",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "shared"
-  ],
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "shared"
+    ]
+  },
   "scripts": {
     "test": "jest --config shared/jest.config.js",
     "dump-flat-app": "node scripts/flatten.js",
     "dump-folder-structure": "find . | grep -v node_modules | grep -v .git | grep -v nosync | grep -v /dist/ | grep -v /build/ | sort > folder-structure.md",
     "lint": "eslint --quiet -c .eslintrc.js \"**/*.{js,ts,vue}\"",
     "lint-warnings": "eslint -c .eslintrc.js \"**/*.{js,ts,vue}\""
+  },
+  "dependencies": {
+    "7zip-bin": "^5.2.0",
+    "electron-builder": "^24.13.3",
+    "@electron/notarize": "^2.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.16.11",

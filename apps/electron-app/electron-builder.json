@@ -28,13 +28,22 @@
   },
   "mac": {
     "target": [
-      "dmg",
-      "zip"
+      {
+        "target": "dmg",
+        "arch": [
+          "universal"
+        ]
+      }
     ],
+    "notarize": false,
     "icon": "../../assets/icons/private-prompts-logo-orange-bubble-512.png",
-    "hardenedRuntime": false, // Hardened runtime requires Apple Developer ID
-    "gatekeeperAssess": false, // Skip Apple Gatekeeper notarization
-    "identity": null
+    "hardenedRuntime": true, // Whether your app has to be signed with hardened runtime: true = Enables additional macOS security protections to prevent unauthorized code execution and tampering. Requires a valid Apple Developer certificate.
+    "gatekeeperAssess": false, // false: skip Apple Gatekeeper notarization
+    "category": "public.app-category.utilities",
+    "entitlements": "config/mac/entitlements.plist",
+    "entitlementsInherit": "config/mac/entitlements.plist",
+    "identity": "Frank Börncke (BRDYQ3BGCX)",
+    "artifactName": "private-prompts-0.0.4-beta-universal.dmg"
   },
   "linux": {
     "target": [
@@ -45,6 +54,7 @@
     "icon": "../../assets/icons/private-prompts-logo-orange-bubble-512.png",
     "artifactName": "PrivatePrompts-0.0.4-beta.Appimage"
   },
+  "afterSign": "scripts/custom-notarize.js",
   "files": [
     {
       "from": "build/main",
