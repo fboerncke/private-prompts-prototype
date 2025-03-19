@@ -503,52 +503,28 @@ Three versions of the application are available:
 
 - **Windows**: Binary works on both 32-bit and 64-bit platforms
 - **Linux**: Binary packaged as AppImage 
-- **macOS**: Binary packaged as dmg (due to Apple’s strict security policies, additional steps are required after unzipping, see below).
+- **macOS**: Binary packaged as dmg file.
 
 ### Installation and Launch Instructions
 
 #### **Windows**
-- Simply double-click the file to launch the application.
+Simply double-click the file to launch the application. Skip warning messages that may appear because of the software being downloaded from the internet or being unsigned.
 
 #### **Linux**
-- Before launching, you may need to make the file executable:
+Before launching, you may need to make the file executable:
   ```bash
   chmod u+x PrivatePrompts-Beta-002.AppImage
   ```
-- Once executable, you can launch it with a double-click.
+Once executable, you can launch it with a double-click.
 
 #### **macOS**
-macOS has strict security measures to protect users from unknown or untrusted applications. Because `PrivatePrompts` is distributed outside the App Store, it may be incorrectly labeled as "damaged" or "unsafe." Rest assured, the app is completely safe. Just follow these steps to fix the issue and get started:
+Open the DMG file and move `Private Prompts.app` to a preferred location.
 
-1. **Download the `.dmg` File**
-   - Click the provided link to download the latest DMG File.
-   - Save it to your **Downloads** folder or another location of your choice.
-
-2. **Open the `.dmg` File**
-   - Double-click the downloaded `.dmg` file.
-   - A new window will appear showing the app.
-
-3. **Move the App to the Applications Folder**
-   - Drag the app icon into the **Applications** folder.
-
-4. **Open the Terminal**
-   - Press **Command (⌘) + Space** to open **Spotlight Search**.
-   - Type **Terminal** and press **Enter** to open the Terminal app.
-
-5. **Run the Fix Command**
-   - Copy and paste the following command into the Terminal, then press **Enter**:
-     ```bash
-     xattr -r -d com.apple.quarantine /Applications/PrivatePrompts-Beta-002.app
-     ```
-   - This command removes a security tag added by macOS that may prevent the app from running.
-
-6. **Start the App**
-   - Open the **Applications** folder, locate `PrivatePrompts`, and double-click it.
-   - The app should now open and function without any issues.
+On first launch, macOS may display a warning because of the software being downloaded from the internet. This can be bypassed to proceed.
 
 ### Uninstall Private Prompts
 
-To uninstall **Private Prompts**, simply delete the application file.
+Each version of **Private Prompts** is distributed as a single-file binary. To uninstall, delete the application file. 
 
 A configuration file is generated to store state and user settings. This JSON file can be edited using any text editor. 
 You may want to clean up these files if you no longer want to use **Private Prompts**. 
@@ -640,7 +616,7 @@ For development and testing, alternative modes (Web and Browser Extension) are a
 
     **Not recommended for production use**, but useful for development and maintenance.
 
-4. **Run Browser Extension in Development Mode (experimental):**
+4. **Run Browser Extension in Development Mode (this is experimental):**
     ```bash
     cd ../browser-extension
     npm run dev
@@ -674,6 +650,8 @@ For development and testing, alternative modes (Web and Browser Extension) are a
      ```
 
     Builds the renderer and uses `electron-builder` to produce installer binaries (Windows/Mac/Linux).
+
+    Before you start any of the above targets make sure to run `npm install` in the project root to make sure that libraries are up to date and consistent.
 
 - **Web App**  
     ```bash
