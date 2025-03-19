@@ -4,7 +4,7 @@
     <!-- Beta Banner -->
     <div class="beta-banner" role="alert" aria-live="assertive">
       <span>
-        0.0.4-beta
+        0.0.5-beta
         <br>
         <a href="https://boerncke.de/kontakt" target="_blank" rel="noopener noreferrer" class="text-primary">
           Feedback welcome!

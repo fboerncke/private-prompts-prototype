@@ -24,7 +24,7 @@
       }
     ],
     "icon": "../../assets/icons/private-prompts-logo-orange-bubble-512.png",
-    "artifactName": "PrivatePrompts-0.0.4-beta.exe"
+    "artifactName": "PrivatePrompts-0.0.5-beta.exe"
   },
   "mac": {
     "target": [
@@ -43,7 +43,7 @@
     "entitlements": "config/mac/entitlements.plist",
     "entitlementsInherit": "config/mac/entitlements.plist",
     "identity": "Frank Börncke (BRDYQ3BGCX)",
-    "artifactName": "private-prompts-0.0.4-beta-universal.dmg"
+    "artifactName": "private-prompts-0.0.5-beta-universal.dmg"
   },
   "linux": {
     "target": [
@@ -52,7 +52,7 @@
     "maintainer": "Frank Börncke <frank.boerncke@gmail.com>",
     "category": "Utility",
     "icon": "../../assets/icons/private-prompts-logo-orange-bubble-512.png",
-    "artifactName": "PrivatePrompts-0.0.4-beta.Appimage"
+    "artifactName": "PrivatePrompts-0.0.5-beta.Appimage"
   },
   "afterSign": "scripts/custom-notarize.js",
   "files": [

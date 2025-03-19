@@ -2,7 +2,7 @@
   "name": "private-prompts-monorepo",
   "productName": "Private Prompts",
   "description": "Private Prompts Main Repository",
-  "version": "0.0.4-beta",
+  "version": "0.0.5-beta",
   "author": {
     "name": "Frank Börncke <frank.boerncke@gmail.com>",
     "url": "https://github.com/fboerncke"

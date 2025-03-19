@@ -10,7 +10,7 @@
         "management-console-line2": "Settings"
     },
     "about": {
-        "about-private-prompts": "About Private Prompts (0.0.4-beta)",
+        "about-private-prompts": "About Private Prompts (0.0.5-beta)",
         "information-1": "Private Prompts is a privacy-first solution created by Frank Börncke, with partial funding from the German Federal Ministry of Education and Research (FKZ 01IS24S44).",
         "information-2": "It enables you to harness AI’s power while keeping your personal or confidential data strictly on your own device, never exposing sensitive details to cloud services.",
         "information-3": "For downloads, documentation, and further details, visit:",

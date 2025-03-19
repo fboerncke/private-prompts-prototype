@@ -2,7 +2,7 @@
   "name": "private-prompts-vue-app",
   "productName": "Private Prompts",
   "description": "Private Prompts Vue Application",
-  "version": "0.0.4-beta",
+  "version": "0.0.5-beta",
   "author": {
     "name": "Frank Börncke <frank.boerncke@gmail.com>",
     "url": "https://github.com/fboerncke"
@@ -21,7 +21,7 @@
     "build-only": "vite build"
   },
   "dependencies": {
-    "@private-prompts/shared": "0.0.4-beta"
+    "@private-prompts/shared": "0.0.5-beta"
   },
   "devDependencies": {}
 }

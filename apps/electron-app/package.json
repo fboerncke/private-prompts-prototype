@@ -2,7 +2,7 @@
   "name": "private-prompts-electron-app",
   "productName": "Private Prompts",
   "description": "Private Prompts Electron Application",
-  "version": "0.0.4-beta",
+  "version": "0.0.5-beta",
   "appId": "org.privateprompts.app",
   "author": {
     "name": "Frank Börncke <frank.boerncke@gmail.com>",

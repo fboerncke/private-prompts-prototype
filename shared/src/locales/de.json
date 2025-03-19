@@ -10,7 +10,7 @@
     "management-console-line2": "Einstellungen"
   },
   "about": {
-    "about-private-prompts": "Über Private Prompts (0.0.4-beta)",
+    "about-private-prompts": "Über Private Prompts (0.0.5-beta)",
     "information-1": "Private Prompts ist eine datenschutzorientierte Lösung von Frank Börncke, die teilweise vom Bundesministerium für Bildung und Forschung (FKZ 01IS24S44) gefördert wird.",
     "information-2": "Auf diese Weise lassen sich die Möglichkeiten moderner KI nutzen, ohne dass persönliche oder vertrauliche Daten jemals das lokale System verlassen – sensible Details gelangen nicht in fremde Cloud-Dienste.",
     "information-3": "Downloads, Dokumentation und weitere Details gibt es hier:",
