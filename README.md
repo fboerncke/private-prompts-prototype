@@ -720,7 +720,7 @@ Visit [privateprompts.org](https://privateprompts.org) or contact the author Fra
 
 ## Acknowledgements
 
-This project receives funding from the [German Federal Ministry of Education and Research](https://www.bmbf.de/) (1.9.2024-28.02.2025, FKZ 01IS24S44)
+This project has receivd funding from the [German Federal Ministry of Education and Research](https://www.bmbf.de/) (1.9.2024-28.02.2025, FKZ 01IS24S44)
 
 [![Logo Bundesministerium für Bildung und Forschung](./resources/assets/bmbf_en.jpg)](https://www.bmbf.de/)
 &nbsp; &nbsp;
