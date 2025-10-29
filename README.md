@@ -23,7 +23,7 @@ For these reasons, there are no plans to develop a web application for **Private
 
 - **Data Privacy Emphasis** & **Pseudonymization**
   Define what you consider sensitive data. The app can automatically mask confidential information before sending it to an external AI service.
-  Automatically replaces sensitive information (like names) with placeholders to protect your privacy. These placeholders can be swapped back later to the original details in the responses.
+  Automatically replaces sensitive information (like names) with temporary placeholders to protect your privacy. These placeholders can be swapped back later to the original details in the responses.
  
 - **Privacy Focus**: Ensures that your personal data is not shared with AI tools, making it safe to use without exposing personal information.
 
@@ -47,7 +47,7 @@ For these reasons, there are no plans to develop a web application for **Private
 
 - **Effectiveness**: The pseudonymization process is highly effective in removing previously defined sensitive information from prompts before they are shared with AI tools. This significantly reduces the risk of privacy breaches.
 
-- **Conflict resolution**: User-defined replacement rules may occasionally conflict with existing text in a prompt, potentially causing unexpected results and preventing correct unmasking. A built-in mechanism automatically detects and resolves such conflicts in the background, ensuring a seamless experience.
+- **Conflict resolution**: User-defined replacement rules may occasionally conflict with existing text in a prompt, potentially causing unexpected results and preventing correct unmasking. A built-in mechanism automatically detects and resolves such conflicts in the background, ensuring a seamless experience. The user will not notice that this is being taken care of. 
 
 - **Limitations**: Pseudonymization offers strong privacy protection but does not ensure absolute anonymity. Specific patterns or contextual clues in prompts may still allow re-identification, especially when combined with external data.
 
@@ -86,123 +86,6 @@ To ensure privacy and security, users should be aware of the following:
 - **Browser Extension:** Same here: The business logic and UI could be packaged as a Chrome/Firefox extension using the `wxt` framework. However, running as a browser extension introduces significant limitations, including restricted file system access, limited offline functionality, and potential security concerns. For these reasons, **Private Prompts** is not recommended for production use in a browser extension format.
 
 **Private Prompts** is designed to help users protect their privacy while using modern AI tools. However, the effectiveness of these measures depends on user vigilance and adherence to security practices.
-
-
-## How You Can Use Private Prompts
-
-This section highlights specific scenarios where **Private Prompts** is particularly beneficial, especially in handling sensitive data in both personal and professional environments.
-
-### Everyday Scenarios: Using Private Prompts for Personal Privacy
-
-1. **Personal Privacy**: Pseudonymize personal information before sharing it with AI tools, ensuring your privacy is maintained.
-
-   - **Example**: Replace your name, address, and phone number with placeholders when asking an AI tool to draft a personal letter.
-
-2. **Security**: Protect sensitive information from unauthorized access by replacing it with placeholders.
-
-   - **Example**: Use placeholders for your email address and social media handles when seeking AI assistance in writing a public blog post.
-
-3. **Data Sharing**: Share your prompts with others while keeping your personal data secure through pseudonymization.
-
-   - **Example**: Pseudonymize the details of a personal project before sharing the prompt with a collaborator to get feedback without revealing private information.
-
-### Workplace Scenarios: Using Private Prompts for Business Security
-
-1. **Data Privacy**: In professional settings, pseudonymize sensitive information before sharing it with AI tools to protect privacy.
-
-   - **Example**: Replace client names and project details with placeholders when using AI to draft reports or proposals.
-
-2. **Legal Compliance**: For legal professionals, maintain confidentiality and comply with data protection regulations by using pseudonymization.
-
-   - **Example**: Pseudonymize sensitive case details when using AI to draft legal documents or research memos, ensuring compliance with confidentiality requirements.
-
-3. **Healthcare**: Pseudonymize patient information before using it with AI tools to protect highly sensitive healthcare data.
-
-   - **Example**: Replace patient names and medical records with placeholders when using AI to analyze healthcare data or generate medical reports.
-
-**Private Prompts** ensures that both personal and professional users can handle data securely and privately, making it a valuable tool for a variety of scenarios.
-
-## In-Depth Use Cases
-
-### Personal Letter or Email
-
-Whether you’re writing a heartfelt letter to a loved one or emailing an acquaintance, you may need help crafting it—but want to shield real names and contact info.
-
-```markdown
-<!-- Sensitive Data Prompt -->
-Write an apology letter to my old friend Sarah Carmichael
-(email: sarah.carmichael@example.com) acknowledging I moved 
-from 92 Lakeview Avenue and haven't stayed in touch.
-```
-
-```markdown
-<!-- Pseudonymized Prompt -->
-Write an apology letter to my old friend Jane Doe
-(email: jane.doe@example.com) acknowledging I moved 
-from 123 Elm Street and haven't stayed in touch.
-```
-
-The AI can suggest a thoughtful letter, and once it’s ready, Private Prompts restores your friend’s real name and your actual former address in the final draft, ensuring your personal details were never sent to external servers.
-
-You can then proceed to adjust the letter according to your needs.
-
-### Children’s Party Invitations
-
-Planning a child’s birthday party often involves sharing a child’s name, your address, and private details about the event. **Private Prompts** helps mask this information so you can still let AI generate creative invitation messages without disclosing personal data.
-
-```markdown
-<!-- Sensitive Data Prompt -->
-Generate a fun birthday invitation for my daughter, Lucy Chen,
-turning 7 on February 14. The party will be at our home,
-123 Apple Lane, starting at 2 PM, with a unicorn theme
-and cupcakes for snacks.
-```
-
-```markdown
-<!-- Pseudonymized Prompt -->
-Generate a fun birthday invitation for my child, Jane Doe,
-turning 7 on March 7. The party will be at our home,
-999 Placeholder Street, starting at 2 PM, with a unicorn theme
-and cupcakes for snacks.
-```
-
-### Real Estate
-
-Real estate professionals can use Private Prompts to create detailed property listings without revealing actual addresses. The AI drafts the text with placeholder addresses, which can be replaced with the real addresses locally after the AI processing.
-
-```markdown
-<!-- Sensitive Data Prompt -->
-Create a real estate listing for my property at 123 Maple Street, Springfield, IL 62704,
-featuring 4 bedrooms, 3 bathrooms, and a spacious backyard.
-```
-
-```markdown
-<!-- Pseudonymized Prompt -->
-Create a real estate listing for my property at 456 Oak Avenue, Spring City, MA 12345,
-featuring 4 bedrooms, 3 bathrooms, and a spacious backyard.
-```
-
-### Legal & NDAs
-Legal professionals frequently draft documents containing highly confidential client details. **Private Prompts** masks this information—like names, addresses, or sensitive project specifics—before sending the document to AI services for initial drafting or language polishing.
-
-```markdown
-<!-- Sensitive Data Prompt -->
-Draft a Non-Disclosure Agreement between the new hire, Alice Johnson,
-and InnovateX Inc., addressing intellectual property, confidentiality,
-and non-compete clauses.
-```
-
-```markdown
-<!-- Pseudonymized Prompt -->
-Draft a Non-Disclosure Agreement between the new hire, Jane Doe,
-and SomeCompany Inc., addressing intellectual property, confidentiality,
-and non-compete clauses.
-```
-
-This approach ensures the real names and organization details never go beyond your computer. Once the AI suggests improved legal language, you can revert the placeholders to reveal the actual client or employee data in the final text.
-
-
-
 
 ## Navigating Private Prompts: A UI Overview
 
@@ -401,7 +284,7 @@ Though this is not an officially supported feature, users can utilize static rep
 
 When you mask a text, **Private Prompts** maintains an internal list of replacements, allowing you to undo the masking later (using the "Unmask" button). Note that this internal list has a short lifetime and is intended for immediate use.
 
-Conflicts may occur but are handled automatically in the background to prevent unexpected results after unmasking prompts.
+Conflicts during the replacement process may occur but are handled automatically in the background to prevent unexpected results after unmasking prompts.
 
 #### Key Features
 
@@ -444,7 +327,7 @@ The **Settings / Import & Export** page serves as the central management interfa
 
 ##### Change Language
 
-- Choose between **English, German, French, and Polish**.
+- Choose between **English, German**.
 - Clicking the respective button sets the language globally for the application.
 
 #### Data Export & Import
@@ -669,13 +552,13 @@ For development and testing, alternative modes (Web and Browser Extension) are a
     
     Creates a `dist` folder with your extension, ready for packaging.
 
-## Private Prompts: Open Source and Transparency
+## Private Prompts: Open Source, Community and Transparency
 
 **Private Prompts** is committed to the open-source community, ensuring transparency, collaboration, and accessibility for developers and users alike.
 
 - **AGPL License**: The Affero General Public License (AGPL) is a free software license that ensures that the source code of a program is available to users. It is a strong copyleft license, meaning that any derivative work must also be distributed under the same license. The AGPL is specifically designed to close the "Application Service Provider" loophole, which allows modified versions of software to be used over a network without releasing the source code. Under the AGPL, if you modify the software and use it over a network, you must make the source code available to the users of that network service.
   
-- **Source Code Availability**: The source code for **Private Prompts** is available on GitHub. This allows developers to contribute to the project, report issues, and suggest improvements. By adopting an open-source model, **Private Prompts** encourages community involvement and continuous improvement, fostering an environment where innovative ideas and collaborative development can thrive.
+- **Source Code Availability**: The source code for **Private Prompts** is available on GitHub. This allows developers from the community to contribute to the project, report issues, and suggest improvements. By adopting an open-source model, **Private Prompts** encourages community involvement and continuous improvement, fostering an environment where innovative ideas and collaborative development can thrive.
 
 - **Transparency and Trust**: By being open-source, **Private Prompts** allows anyone to inspect the code, ensuring that the application is not doing anything malicious with private information. This transparency helps build trust among users, as they can verify for themselves that their data remains secure and private.
 
@@ -691,7 +574,7 @@ Private Prompts is designed for individuals who prioritize data privacy and do n
 If you can use ChatGPT or similar AI tools, you will have no trouble using Private Prompts. The interface is designed to be intuitive, allowing essential functions to be used without technical knowledge. Advanced users also have access to additional customization options.
 
 ### Why is my data at risk when using AI?
-When you submit data to an AI service, you lose control over what happens to it. Your information might be stored, analyzed, or even used for future training of AI models. If data is processed on external servers, there is also the risk of data breaches, unauthorized access, or misuse.
+When you submit data to an AI service, you lose control over what happens with it. Your information might be stored, analyzed, or even used for future training of AI models. If data is processed on external servers, there is also the risk of data breaches, unauthorized access, or misuse.
 
 ### How does Private Prompts ensure data privacy?
 You have full control over which data is considered sensitive, such as names, credit card numbers, or addresses. All information remains on your local device—there is no cloud storage or hidden data transmission. The security of your data depends solely on your own system environment.
